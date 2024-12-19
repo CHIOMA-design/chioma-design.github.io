@@ -1,0 +1,345 @@
+
+#image img {
+    width: 100%;        
+    max-width: 100%;     
+    height: auto;      
+    object-fit: contain; 
+}
+@font-face{
+    font-family: 'Epilogue';
+    src: url('./static/Epilogue-Medium.ttf')format('truetype');
+}
+@media (min-width: 1440px) {
+html, body{
+    font-weight: 700px;
+    font-family: 'Epilogue';
+    background-color: hsl(0, 0%, 98%);
+}
+/*#image img {
+    width: 50%;      
+    max-width: 1440px; 
+}*/
+html, body p{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+}
+html, body h1{
+    color: hsl(0, 0%, 8%);
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+#ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding-right: 1000px;
+}
+#ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    transition: color 0.3s ease;
+}
+#ul li  :hover{
+    color:hsl(0, 0%, 8%);
+}
+#container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#image{
+    padding-right: 70px;
+}
+#div{
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+#log{
+    display: flex;
+    gap: 45px;
+    color: hsl(0, 0%, 41%);
+}
+#log p:hover{
+    color: hsl(0, 0%, 8%);
+}
+#log button:hover{
+    color: hsl(0, 0%, 8%);
+}    
+#div h1{
+    font-size: 100px;
+    font-weight: 700;
+    padding-top: 150px;
+}
+#iv{
+    display: flex;
+    gap: 30px;
+}
+#img{
+    height: 30px;
+    padding: 15px 5px;
+    padding-left: 9px;
+    padding-top: 25px;
+    padding-right: 12px;
+}
+#foot{
+    display: flex;
+    padding-top: 480px;
+    gap: 30px;
+    height: 35px;
+}
+#button{
+    font-size: 30px;
+    color: hsl(0, 0%, 41%);
+    border-radius: 15px;
+    height: 70px;
+    width: 200px;
+}
+#button :hover{
+    color: hsl(0, 0%, 8%);
+}
+#like{
+    padding-left: 150px;
+}
+#like button{
+    font-size: 30px;
+    color:  hsl(0, 0%, 98%);
+    border-radius: 15px;
+    height: 70px;
+    width: 200px;
+    background-color: hsl(0, 0%, 8%);
+}
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#dropdown-menu li {
+    padding: 8px 16px;
+}
+#dropdown-menu li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    display: block;
+}
+#dropdown:hover #dropdown-menu {
+    display: block;
+}
+#menu-btn{
+    display: none;
+}
+.src{
+    display: none;
+}
+#dv{
+    display: none;
+}
+#girl{
+    display: none;
+}
+}
+
+@media (max-width: 375px) {
+html, body {
+    font-size: 20px;
+    flex-direction: column;
+    font-family: 'Epilogue';
+}
+@font-face{
+    font-family: 'Epilogue';
+    src: url('./static/Epilogue-Medium.ttf')format('truetype');
+}
+html, body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%) ;
+    padding: 0;
+    margin: 0;
+}
+html, body p{
+    font-size: 15px;
+    color: hsl(0, 0%, 41%);
+}
+html, body h1{
+    color: hsl(0, 0%, 8%);
+    font-size: 39px;
+}
+#like button{
+    font-size: 15px;
+    color:  hsl(0, 0%, 98%);
+    border-radius: 10px;
+    height: 45px;
+    width: 110px;
+    background-color: hsl(0, 0%, 8%);
+}
+#div{
+    display: inline-flex;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+#foot{
+    display: flex;
+    padding-top: 70px;
+    gap: 15px;
+    width: 20px;
+    height: 19px;
+    padding-left: 19px;
+}
+#source{
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+#v{
+    display: none;
+}
+#id h1{
+    display: flex;
+    justify-content: center;
+}
+#h1 {
+    display: flex;
+    justify-content: center;
+}
+#both {
+     display: flex;
+     justify-content: space-between;
+}
+#log{
+    display: none;
+}
+#iv{
+    display: none;
+}
+#dv { 
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+}
+
+#vi {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 12px;
+    width: 220px;
+    top: 100%;
+    right: 0;  /* This ensures the dropdown menu stays aligned to the left of the menu icon */
+    border: 1px solid;
+    box-sizing: border-box;  /* Include padding/border in width calculation */
+
+    height: 100vh;
+    color: hsl(0, 0%, 41%) ;
+    padding-top: 40px;
+}
+
+#dv:hover #vi {
+    display: block;
+}
+
+#menu-icon {
+    display: flex;
+    padding-left: 80%;
+}
+
+#lu p {
+    display: flex;
+    justify-content: center;
+}
+
+#vi ul {
+    margin: 0;
+    padding: 0;
+}
+
+#vi ul li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+#vi ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%) ;
+}
+
+#vi ul li a:hover {
+    background-color: #f0f0f0;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 5px;
+}
+#menu-btn{
+    display: none;
+}
+#lu{
+    justify-content: space-between;
+}
+#menu-u{
+    padding-left: 85%;
+}
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+#dropdown-menu {
+    display: none;
+    position: relative;
+    background-color: white;
+    min-width: 160px;
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+}
+#dropdown-menu li {
+    padding: 8px 16px;
+}
+#dropdown-menu li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    display: block;
+}
+#dropdown:hover #dropdown-menu {
+    display: block;
+}
+#vi button{
+    display: flex;
+    justify-self: center;
+    color: hsl(0, 0%, 41%);
+    width: 90%;
+    justify-content: center;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 25px;
+    background-color: white;
+    justify-content: space-around;
+    border-color:  hsl(0, 0%, 41%) ;
+}
+#login {
+    display: flex;
+    justify-self: center;
+    padding-left: 50px;
+    color: hsl(0, 0%, 41%);
+}
+}
